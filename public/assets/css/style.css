@@ -1070,3 +1070,6 @@ section {
     padding-right: 20px 15px;
   }
 }
+#btnCerrarS:hover{
+    background-color: #040b14;
+}

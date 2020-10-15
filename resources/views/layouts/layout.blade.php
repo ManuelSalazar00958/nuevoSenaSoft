@@ -96,10 +96,11 @@
 
       </div>
     </section><!-- End Contact Section -->
-    @section('content')
-
-    @endsection
-    bsec
+    <section>
+        <div class="container">
+        @yield('content')
+        </div>
+    </section>
   </main><!-- End #main -->
 
   <footer id="footer">
