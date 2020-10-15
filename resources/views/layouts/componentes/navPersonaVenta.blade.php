@@ -8,11 +8,8 @@
     <nav class="nav-menu">
       <ul>
         <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>hogar</span></a></li>
-        <li><a href="{{ route('usuario.index') }}"><i class="bx bx-user"></i> <span>Usuarios</span></a></li>
-        <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Tiendas</span></a></li>
-        <li><a href="#portfolio"><i class="bx bx-book-content"></i> Proveedores</a></li>
+        <li><a href="{{ route('ventas.index') }}"><i class="bx bx-file-blank"></i> <span>Facturas</span></a></li>
         <li>
-
             <div>
                 <a href="{{ route('logout') }}"
                    onclick="event.preventDefault();
@@ -20,7 +17,6 @@
                     <i class="icofont-exit"></i>
                     Cerrar Sesion
                 </a>
-
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                     @csrf
                 </form>

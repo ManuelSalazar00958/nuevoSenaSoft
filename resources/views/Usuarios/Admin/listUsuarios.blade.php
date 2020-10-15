@@ -29,6 +29,7 @@
                <button class="btn btn-primary fa-pull-right" data-toggle="modal" data-target="#registrar">
                 <i class="icofont-contact-add" style="font-size: 40px"></i>
                </button>
+               @include('Usuarios.Admin.createUsuario')
            </div>
        </div>
    </div>

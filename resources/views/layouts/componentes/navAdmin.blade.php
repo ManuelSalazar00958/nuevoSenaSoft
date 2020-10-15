@@ -8,11 +8,11 @@
     <nav class="nav-menu">
       <ul>
         <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>hogar</span></a></li>
-        <li><a href="{{ route('usuario.index') }}"><i class="bx bx-user"></i> <span>Usuarios</span></a></li>
-        <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Tiendas</span></a></li>
+        <li><a href="{{ route('usuario.listForAdmin') }}"><i class="bx bx-user"></i> <span>Usuarios</span></a></li>
+        <li><a href="{{ route('sucursal.index') }}"><i class="bx bx-book-content"></i> Sucursales</a></li>
+        <li><a href="#portfolio"><i class="bx bx-book-content"></i> Bodegas</a></li>
         <li><a href="#portfolio"><i class="bx bx-book-content"></i> Proveedores</a></li>
         <li>
-
             <div>
                 <a href="{{ route('logout') }}"
                    onclick="event.preventDefault();

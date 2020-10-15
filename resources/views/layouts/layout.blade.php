@@ -18,7 +18,20 @@
 
   <!-- ======= Header ======= -->
   <header id="header">
-    @include('layouts.componentes.nav')
+    @switch(Auth::user()->roles_id)
+        @case(1)
+            @include('layouts.componentes.nav')
+            @break
+        @case(2)
+            @include('layouts.componentes.navAdmin')
+            @break
+        @case(3)
+            @include('layouts.componentes.navPersonaVenta')
+            @break
+        @default
+
+    @endswitch
+
   </header><!-- End Header -->
 
 
